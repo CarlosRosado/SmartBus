@@ -1,8 +1,65 @@
-# Awesome Random Forest
+# SmartBus: Big Data & Data Science en Trasnporte Urbano
 
-Random Forest - a curated list of resources regarding tree-based methods and more, including but not limited to random forest, bagging and boosting.
+Trabajo  de  fin  de  Máster  (TFM),  trata  de  la  realización  de  un  estudio y análisis de ciertos tipos de datos procedentes de la red de autobuses de Madrid (EMT). El cual se basa en una plataforma Big Data mediante la cual se almacenarán grandes cantidades de datos procedentes de diversas fuentes, tanto internas a la EMT como externas, con el fin de aplicar técnicas de aprendizaje automático y realizar una predicción del número de viajeros que emplear ́an ciertos tipos de autobús.
 
-## Contributing
+Por otro lado, se realizará un análisis de los resultados obtenidos mediante el cual se pueda mejorar la eficiencia de la red de autobuses de la EMT, por medio de técnicas de regresión en grandes cantidades de datos.
+
+Para finalizar, se implementará un DashBoard mediante el cual el usuario final pueda ver los resultados de nuestro estudio y pueda tomar decisiones en base a un criterio basado en grandes cantidades de datos.
+
+## Estructura
+
+* 1_Carga: En este apartado tenemos los scripts para realizar la carga de los datos desde el cluster a HDFS.
+  * 1_carga_viajeros.sh
+  * 2_carga_tablas_aux.sh
+  * 3_carga_trafico.sh
+  * 4_carga_gtfs.sh
+  * 5_carga_nueva.sh
+  * README.txt
+
+* 2_IngestaProcesado
+  * 2-1_Historicos
+    * 1_ingesta_viajeros.hql
+    * 1_ingesta_viajeros.sh
+    * 2.1_ingesta_paradas_sentidos.hql
+    * 2.2_join_groupby_sentidos.hql
+    * 2_ingesta_tablas_aux.sh
+    * 3_ingesta_tabla_master.sh
+    * 3_ingesta_tablas_aux.hql
+    * 4_ingesta_trafico.hql
+    * 5_join_anhos_trafico.hql
+    * 6_generate_master.hql
+    * 7_poda_outliers.hql
+    * v1_ingesta_gtfs.sh
+    * v1_tablas_GTFS.hql
+    * v2_ingesta_count_billetes.hql
+
+  * 2-2_NuevosDatos
+    * 1_ingesta_nuevos_viajeros.hql
+    * 2_ingesta_nuevos_auxiliares.hql
+    * 3_ingesta_nuevos_master.hql
+    * ingesta_nuevos_datos.sh
+
+* 3_Auditoria
+  * 1_Auditoria_EstudioLineas.ipynb
+  * 2_Auditoria_EstudioTemporal.ipynb
+  * 3_Auditoria_EstudioDemanda.ipynb
+  * 4_Auditoria_EstudioVariables.ipynb
+
+* 4_Analítica
+  * 1_Clustering
+    * 1_ClusteringLineas_SAXKmeans.ipynb
+    * 2_ClusteringLineas_KMeans_Jerarquico.ipynb
+    * 3_ClusteringLineas_Conteo.ipynb
+    
+  * 2_PrediccionDemanda
+    * 1_PrediccionDemanda_ARIMA.ipynb
+    * 2_PrediccionDemanda_Extract2keras.ipynb
+    * 3_PrediccionDemanda_Keras.ipynb
+
+
+
+
+
 Please feel free to [pull requests](https://github.com/kjw0612/awesome-random-forest/pulls), email Jung Kwon Lee (deruci@snu.ac.kr) or join our chats to add links.
 
 [![Join the chat at https://gitter.im/kjw0612/awesome-random-forest](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kjw0612/awesome-random-forest?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
