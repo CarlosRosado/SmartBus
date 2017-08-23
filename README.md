@@ -60,3 +60,15 @@ Para finalizar, se implementará un DashBoard mediante el cual el usuario final 
 
 ## Uso y Requisitos
 
+Para las partes 1 y 2 no necesitamos tener nada mas que beeline y hive instalado. Para las partes 3 y 4 han sido implementadas con diferentes tipos de kernel, estos son los siguientes:
+
+* 3_Auditoria: Todos los notebooks se han ejecutado con un kernel con pySpark 2.2.0 y python 2.7 (aunque es compatible con la      versión 3)
+
+* 4_Analítica
+  * 1_Clustering: Notebook ejecutado con un kernel pySpark 2.2.0 y python 2.7.
+
+  * 2_PrediccionDemanda: 
+    * 1_PrediccionDemanda_ARIMA.ipynb: El kernel empleado ha sido un kernel pySpark 2.2.0 y python 2.7, es necesario que tengamos instalada la librería R2PY ya que tenemos una parte con R.
+    * 2_PrediccionDemanda_Extract2keras.ipynb: Notebook ejecutado con un kernel pySpark 2.2.0 y python 2.7.
+    * 3_PrediccionDemanda_Keras.ipynb: Kernel python 2.7, tenemos que tener instaladas las librerías theano y keras. Nota: Este kernel ha sido ejecutado en local debido a que es muy complejo la instalación de keras en un cluster.
+
