@@ -17,7 +17,7 @@ Para finalizar, se implementará un DashBoard mediante el cual el usuario final 
   * README.txt
 
 * 2_IngestaProcesado
-  * 2-1_Historicos
+  * 2-1_Historicos: Scripts para la ingesta y procesado de los datos históricos de la EMT y de fuentes externas.
     * 1_ingesta_viajeros.hql
     * 1_ingesta_viajeros.sh
     * 2.1_ingesta_paradas_sentidos.hql
@@ -33,29 +33,32 @@ Para finalizar, se implementará un DashBoard mediante el cual el usuario final 
     * v1_tablas_GTFS.hql
     * v2_ingesta_count_billetes.hql
 
-  * 2-2_NuevosDatos
+  * 2-2_NuevosDatos: Scripts para la ingesta de nuevos datos de la EMT y de fuentes externas.
     * 1_ingesta_nuevos_viajeros.hql
     * 2_ingesta_nuevos_auxiliares.hql
     * 3_ingesta_nuevos_master.hql
     * ingesta_nuevos_datos.sh
 
-* 3_Auditoria
+* 3_Auditoria: Notebooks para la realización de una auditoría de los datos.
   * 1_Auditoria_EstudioLineas.ipynb
   * 2_Auditoria_EstudioTemporal.ipynb
   * 3_Auditoria_EstudioDemanda.ipynb
   * 4_Auditoria_EstudioVariables.ipynb
 
 * 4_Analítica
-  * 1_Clustering
+  * 1_Clustering: Notebooks para la realización de la segmentación de las lineas de la EMT.
     * 1_ClusteringLineas_SAXKmeans.ipynb
     * 2_ClusteringLineas_KMeans_Jerarquico.ipynb
     * 3_ClusteringLineas_Conteo.ipynb
     
-  * 2_PrediccionDemanda
+  * 2_PrediccionDemanda: Notebooks para la realización de la predicción de la demanda en las lineas de la EMT.
     * 1_PrediccionDemanda_ARIMA.ipynb
     * 2_PrediccionDemanda_Extract2keras.ipynb
     * 3_PrediccionDemanda_Keras.ipynb
 
+
+
+## Uso y Requisitos
 
 
 
