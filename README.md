@@ -50,12 +50,12 @@ Para finalizar, se implementará un DashBoard mediante el cual el usuario final 
     * 1_ClusteringLineas_SAXKmeans.ipynb
     * 2_ClusteringLineas_KMeans_Jerarquico.ipynb
     * 3_ClusteringLineas_Conteo.ipynb
-    
+  
   * 2_PrediccionDemanda: Notebooks para la realización de la predicción de la demanda en las lineas de la EMT.
     * 1_PrediccionDemanda_ARIMA.ipynb
     * 2_PrediccionDemanda_Extract2keras.ipynb
     * 3_PrediccionDemanda_Keras.ipynb
-
+    *	4_PrediccionDemanda_IngestaDatos.ipynb
 
 
 ## Uso y Requisitos
@@ -71,4 +71,5 @@ Para las partes 1 y 2 no necesitamos tener nada mas que beeline y hive instalado
     * 1_PrediccionDemanda_ARIMA.ipynb: El kernel empleado ha sido un kernel pySpark 2.2.0 y python 2.7, es necesario que tengamos instalada la librería R2PY ya que tenemos una parte con R.
     * 2_PrediccionDemanda_Extract2keras.ipynb: Notebook ejecutado con un kernel pySpark 2.2.0 y python 2.7.
     * 3_PrediccionDemanda_Keras.ipynb: Kernel python 2.7, tenemos que tener instaladas las librerías theano y keras. Nota: Este kernel ha sido ejecutado en local debido a que es muy complejo la instalación de keras en un cluster.
+    * 4_PrediccionDemanda_IngestaDatos.ipynb: Kernel python 2.7 y pySpark 2.2.0.
 
